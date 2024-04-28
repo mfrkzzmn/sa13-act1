@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/a-cursive" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,30 +19,46 @@
         </nav>
     </header>
     <main>
-        <article>
-            <img src="my_pic.jpeg" alt="Description of the image" class="small-image">
-            <h2>Hello, My name is Md Farukuzzaman</h2>
-            <p>
-            I am majoring Computer Science with Cybersecurity concentration.
-            I like reading book, knowing different type of culture and watching move at my leisure time.
-            </p>
-            
-        </article>
         <section id="home">
-            <h1>Welcome to My Portfolio</h1>
+            <article>
+                <h2 id="welcome">Welcome to My Portfolio.<br> My name is Md Farukuzzaman.</h2>
+                <div>
+                    <img src="my_pic.jpeg" alt="Description of the image"  class="small-image">
+                </div>
+            </article>
         </section>
         <section id="about">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel ligula nec odio aliquet luctus.</p>
+            <p>
+                I am majoring Computer Science with Cybersecurity concentration.
+                I like reading book, knowing different type of culture and watching move at my leisure time.
+            </p>
         </section>
-        <section id="portfolio">
+        <!-- <section id="portfolio">
             <h2>Portfolio</h2>
             <div class="gallery">
                 <div class="work-sample">Work Sample 1</div>
                 <div class="work-sample">Work Sample 2</div>
                 <div class="work-sample">Work Sample 3</div>
             </div>
-        </section>
+        </section> -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="gallery">
+              <div class="gallery-item">
+                <img src="My_cute_sloth.jpeg" alt="Sample 1">
+              </div>
+              <div class="gallery-item">
+                <img src="my_red_roses.jpeg" alt="Sample 2">
+              </div>
+              <div class="gallery-item">
+                <img src="my_cute_horse.webp" alt="Sample 1">
+              </div>
+              <div class="gallery-item">
+                <img src="my_pink_roses.jpeg" alt="Sample 2">
+              </div>
+            </div>
+          </section>
         <section id="contact">
             <h2>Contact Me</h2>
             <form>
@@ -49,7 +66,7 @@
                 <input type="text" id="name" name="name" required><br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br>
-                <label for="message">Message:</label><br>
+                <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea><br>
                 <button type="submit">Send</button>
             </form>

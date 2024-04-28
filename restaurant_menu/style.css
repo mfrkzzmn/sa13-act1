@@ -1,48 +1,68 @@
 body {
-    /* background-color: aqua; */
-    background-image: url("veg_pic.png");
-    background-size: 150%; 
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #48cd2a;
-    color: rgb(214, 23, 39);
-    text-align: center;
-    padding: 20px;
+  background-color: #008080; 
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Pacifico', cursive;
 }
 
 main {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
 }
 
-section {
-    margin-bottom: 30px;
-    color: rgb(24, 26, 25);
-   
-}
-
-h2 {
-    color: #f06509;
+section h2 {
+  font-family: 'Arial Rounded MT Bold';
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+  list-style-type: none;
+  /* padding: 0; */
 }
 
 li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-li::after {
-    content: attr(data-price);
-    float: right;
+.menu-item {
+  font-size: 16px;
 }
+
+.menu-price {
+  font-size: 16px;
+  color: #333;
+}
+
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #1c3fcd;
-    color: white;
+  background-color: #008080; /* Teal */
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
+
+.list-header {
+
+  font-family: cursive;
+  
+}
+
+.list-description {
+  font-family: auto;
+  font-size: medium;
+  font-style: italic;
+  color: #008080;
+}
+

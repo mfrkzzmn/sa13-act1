@@ -1,3 +1,7 @@
+body {
+    display: grid;
+}
+
 header {
     background-color: #333;
     color: white;
@@ -8,6 +12,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: right;
 }
 
 nav ul li {
@@ -26,12 +31,6 @@ main {
     padding: 20px;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .work-sample {
     width: 30%;
     background-color: #f2f2f2;
@@ -44,7 +43,7 @@ main {
     background-color: #ddd;
 }
 
-form label {
+*/ form label {
     display: block;
 }
 
@@ -52,6 +51,7 @@ form input,
 form textarea {
     width: 100%;
     margin-bottom: 10px;
+    border-color: black;
 }
 
 form button {
@@ -64,4 +64,70 @@ form button {
 
 form button:hover {
     background-color: #555;
+}
+
+.small-image {
+    width: 40%;
+}
+
+#welcome {
+    font-family: cursive;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+form {
+    max-width: 500px;
+    /* margin: 0 auto; */
+}
+
+form label,
+form textarea,
+form input[type="text"],
+form input[type="email"],
+form button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    /* makes the image fill the container */
+    height: auto;
+    /* maintains aspect ratio */
 }
