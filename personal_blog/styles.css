@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #db34b7; /* Blue color */
+    color: #fff; /* White text */
+    padding: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+.small-image {
+    width: 90%; /* You can adjust this percentage to make the image smaller or larger */
+    height: auto; /* This maintains the aspect ratio of the image */
+}
+
+footer {
+    background-color: #5e36df; /* green color */
+    color: hsla(120, 6%, 93%, 0.936); /* White text */
+    text-align: center;
+    padding: 10px;
+}

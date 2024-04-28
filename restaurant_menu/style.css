@@ -1,0 +1,48 @@
+body {
+    /* background-color: aqua; */
+    background-image: url("veg_pic.png");
+      background-size: 150%; 
+}
+
+header {
+    background-color: #48cd2a;
+    color: rgb(214, 23, 39);
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    color: rgb(24, 26, 25);
+   
+}
+
+h2 {
+    color: #f06509;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li::after {
+    content: attr(data-price);
+    float: right;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1c3fcd;
+    color: white;
+}
