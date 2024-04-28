@@ -8,6 +8,8 @@ header {
     background-color: #db34b7; /* Blue color */
     color: #fff; /* White text */
     padding: 20px;
+    text-align: center;
+    font-style: italic;
 }
 
 main {
@@ -19,8 +21,22 @@ article {
     margin-bottom: 40px;
 }
 
+article {
+    margin-bottom: 40px;
+  }
+  
+  article h2 {
+    color: #4b4646;
+  }
+  
+  article p {
+    line-height: 1.6;
+    margin: 10px auto;
+    padding: 10px 0;
+  }
+
 .small-image {
-    width: 90%; /* You can adjust this percentage to make the image smaller or larger */
+    width: 40%; /* You can adjust this percentage to make the image smaller or larger */
     height: auto; /* This maintains the aspect ratio of the image */
 }
 
@@ -30,3 +46,4 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
